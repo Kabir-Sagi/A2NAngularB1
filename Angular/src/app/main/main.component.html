@@ -1,0 +1,28 @@
+<!-- <div [ngSwitch]="name">
+    <h2 *ngSwitchCase="'sagar'">Hello Sagar</h2>
+    <h2 *ngSwitchCase="'chris'">Hello Chris</h2>
+    <h2 *ngSwitchCase="'adam'">Hello Adam</h2>
+    <h2 *ngSwitchCase="'smith'">Hello Smith</h2>
+</div> -->
+<div id="outer">
+Enter Name:<input type="text" #tb (keyup)="0" />
+<div [ngSwitch]="tb.value">
+    <h2 *ngSwitchCase="'sagar'">Good Morning Sagar</h2>
+    <h2 *ngSwitchCase="'rahul'">Good Morning Rahul</h2>
+    <h2 *ngSwitchCase="'sneha'">Good Morning Sneha</h2>
+    <h2 *ngSwitchCase="'zoya'">Good Morning Zoya</h2>
+    <h2 *ngSwitchCase="'kabir'">Good Morning Kabir</h2>
+    <h2 *ngSwitchDefault>No Data</h2>
+</div>
+<div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button routerLink=".">Link</a>
+
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+  </div>
+</div>

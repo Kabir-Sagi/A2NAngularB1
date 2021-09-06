@@ -1,0 +1,8 @@
+#outer {
+    text-align: center;
+    margin-top: 100px;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}

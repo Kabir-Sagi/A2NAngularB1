@@ -1,0 +1,16 @@
+<!-- <div>
+       <h2 [class]="classofcss">Welcome to Angular world</h2>
+       <button (click)="ChangeCss()">Change Css</button>
+       <button (click)="FirstCss()">Change Css</button>
+</div> -->
+
+   <div>
+           <h2>Property Data Binding</h2>
+          <img 
+          [src]="image" 
+          width="300px" height="300px" />
+         <br/><br/>
+         <button [disabled]="isDisabled" mat-button color="primary" (click)="familyImage()">Family Image</button>
+         <button [disabled]="!isDisabled" mat-button color="warn" (click)="freindsImage()">Friends Image</button>
+   
+       </div>

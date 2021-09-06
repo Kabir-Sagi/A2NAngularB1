@@ -1,0 +1,24 @@
+.one {
+    background-color: blue;
+    font-size: 20px;
+    color: whitesmoke;
+   
+}
+.two {
+    background-color: chocolate;
+    font-size: 8px;
+    color: white;
+}
+.three {
+    background-color: crimson;
+    font-size: 15px;
+    color: cornsilk;
+}
+.four {
+    background-color: cornflowerblue;
+    font-size: 6px;
+    color:whitesmoke
+}
+li {
+    padding:10px;
+}

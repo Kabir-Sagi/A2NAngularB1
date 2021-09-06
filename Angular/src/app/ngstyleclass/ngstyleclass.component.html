@@ -1,0 +1,48 @@
+<div>
+  <h2>Ng Style</h2>
+  <div>
+    <p style="background-color: blueviolet; padding: 10px; color: white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+      veniam.
+    </p>
+    <p
+      [ngStyle]="{ 'background-color': 'red', padding: '10px', color: 'white' }"
+    >
+      Lorem ipsum dolor sit amet.
+    </p>
+  </div>
+  <div>
+    <ul *ngFor="let info of Info">
+      <li
+        [ngStyle]="{
+          'background-color': getColor(info.country),
+          color: 'white',
+          padding: '10px'
+        }"
+      >
+        {{ info.name }} {{ info.country }}
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Ng Class</h2>
+    <div>
+      <!-- <ul *ngFor="let info of Info">
+        <li
+          [ngClass]="{
+                          'one':info.country==='India'?true : false,
+                          'two':info.country ==='UK'?true :false,
+                         'three':info.country==='USA' ? true:false,
+                        'four':info.country==='AUS'?true:false}"
+        >
+          {{ info.name }} {{ info.country }}
+        </li>
+      </ul> -->
+      <ul *ngFor="let info of Info">
+        <li [ngClass] = fnGetClass(info.country)>
+          {{ info.name }} {{ info.country }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

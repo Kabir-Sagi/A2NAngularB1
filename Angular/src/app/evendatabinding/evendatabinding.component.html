@@ -1,0 +1,38 @@
+  
+ <table border=2>
+     <thead>
+         <tr>
+             <th>ID</th>
+             <th>NAME</th>
+             <th>EMAIL</th>
+             <th>CITY</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>1</td>
+             <td>S1</td>
+             <td>S1@gmail.com</td>
+             <td>Hyd</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>S2</td>
+            <td>S2@gmail.com</td>
+            <td>Pune</td>
+        </tr>
+        <tr *ngIf="status">
+            <td>3</td>
+            <td>S3</td>
+            <td>S3@gmail.com</td>
+            <td>Banglore</td>
+        </tr>
+        <tr *ngIf="status">
+            <td>4</td>
+            <td>S4</td>
+            <td>S4@gmail.com</td>
+            <td>Delhi</td>
+        </tr>
+     </tbody>
+ </table><br/>
+ <button (click)="showRecords()">{{status ? "Hide" :"Show"}} Details</button>
